@@ -1,0 +1,241 @@
+body {
+  background-image: url('./codesimage.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 배경 이미지 자체에 opacity를 적용하여 연하게 만들기 */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff; /* 배경이미지가 밝아지도록 하기 위해 흰색 배경을 추가합니다. */
+  opacity: 0.5; /* 원하는 수준의 투명도를 적용합니다. */
+  z-index: -1; /* 배경 이미지 뒤에 위치하도록 설정합니다. */
+}
+
+.header {
+  background : black ;
+  display: table ;
+  width : 102% 
+}
+
+.item {
+  text-align : center ;
+  padding-top : 10px ;
+  padding-bottom : 5px;
+  display : table-cell ;
+  color : white ;
+  text-decoration : none ;
+  font-size : 1.3rem ;
+}
+
+.item:hover {
+  background : white ;
+  color: black;
+}
+
+/* 메뉴 버튼 ------------------------------------------ */
+
+.menu {
+  background: whites;
+  border-radius: 8px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  padding: 10px;
+}
+
+
+
+.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Not Login css ------------------------------------ */
+
+*{
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+body{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-wrapper{
+  width: 600px;
+  height: 350px;
+  padding: 40px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 27%;
+  top : 10%;
+  border: 2px solid black;
+  border-radius:10px;
+}
+
+.login-wrapper > h1{ /* Login 문구*/
+  font-size: 30px;
+  color: #6A24FE;
+  margin-bottom: 20px;
+  font-weight: 1000;
+}
+.login-wrapper > input{
+  width: 100%;
+  height: 48px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  background-color: #F8F8F8;
+}
+.login-wrapper > input::placeholder{
+  color: #563b3bad;
+}
+
+.login-wrapper > button{
+  color: #fff;
+  font-size: 45px;
+  background-color: #6A24FE;
+  margin-top: 20px;
+  border:none;
+  border-radius:10px;
+}
+
+.login-wrapper #wrongpwd {
+  color: red; 
+  margin-left: 50px;
+  font-size: larger;
+  font-weight: bolder;
+}
+/* Home css ------------------------------*/ 
+
+#home {
+  text-align: center; 
+  margin-top: 50px; 
+}
+
+h1 > span {
+  color: #336699; /* 이름에 대한 색상을 지정합니다. */
+  font-size: 50px;
+}
+
+h3 {
+  margin-top: 20px; /* 위쪽 여백을 추가합니다. */
+  color: #555; /* 부가적인 텍스트에 대한 색상을 지정합니다. */
+}
+
+#home > h1 {
+  margin-top: 20px; /* 위쪽 여백을 추가합니다. */
+  border-top: 1.5px solid black; /* 구분선을 추가합니다. */
+  padding-top: 10px; /* 구분선 위 여백을 추가합니다. */
+}
+
+#home > #wel {
+  font-size: 40px;
+}
+#home > #info {
+  margin-top : 30px;
+  padding-top : 30px;
+}
+
+/* About Me css ----------------------------------- */ 
+
+.aboutMe {
+  font-size: 19px;
+}
+
+#color1 {
+  background-color: #c4ffe1;
+  border : 1px solid green;
+  font-size: larger;
+}
+
+
+#table {
+  border: 2px solid black; 
+  width: 1300px;
+  height: 200px;
+}
+
+#table  td {
+  border : 1px solid black; 
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+.aboutMe h1 {
+  font-size: 50px; 
+}
+
+#intro {
+  font-size: 21px;
+}
+
+/* Project css --------------------------------------------------- */
+.project {
+  margin-left: 150px;
+  margin-top: 70px;
+}
+
+.project > input {
+  border : 1px solid black; 
+  padding: 8px 20px;
+  font-size: larger;
+}
+
+.eachPro {
+  font-size: 30px;
+  width: 1000px;
+  height: 500px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.eachPro > #name {
+  width: 100%;
+  height: 80px;
+  font-size: 55px;
+  border: 1px solid black; 
+  color: #333333;
+  font-family: Impact,Charcoal,sans-serif;
+}
+
+.eachPro > #period {
+  color: gray; 
+  font-family: Century Gothic,sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  border: 1px solid black;
+}
+
+.eachPro > #img {
+  text-align: left;
+  position: relative;
+  right: 240px;
+}
+
+.eachPro > #explain {
+  text-align: top;
+  font-size: 33px;
+  border: 3px solid black; 
+  position: relative;
+  top: -357px; 
+  width: 48.8%;
+  right: -510px;
+  height: 70%;
+  font-family: 'Times New Roman', Times, serif;
+}
